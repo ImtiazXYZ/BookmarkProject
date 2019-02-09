@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favourite">
+    <ImageView
+        android:id="@+id/favimg"
+        android:layout_width="89dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/fsvNme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:text="Name"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toEndOf="@id/favimg"
+        app:layout_constraintTop_toTopOf="@+id/favimg" />
+
+    <TextView
+        android:id="@+id/favage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorBlack"
+        android:text="Age"
+        app:layout_constraintStart_toStartOf="@+id/fsvNme"
+        app:layout_constraintTop_toBottomOf="@+id/fsvNme" />
+    <TextView
+        android:id="@+id/favdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="@+id/favage"
+        app:layout_constraintTop_toBottomOf="@+id/favage" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
